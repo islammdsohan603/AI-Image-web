@@ -55,8 +55,12 @@ const Navbar = () => {
         {user && (
           <div>
             <Avatar>
-              <Avatar.Image alt="John Doe" src={user?.image} />
-              <Avatar.Fallback>JD</Avatar.Fallback>
+              <Avatar.Image
+                alt="John Doe"
+                src={user?.image}
+                referrerPolicy="no-referrer"
+              />
+              <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
             </Avatar>
           </div>
         )}
