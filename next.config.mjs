@@ -3,7 +3,12 @@ const nextConfig = {
   reactCompiler: true,
 
   images: {
-    domains: ["i.pinimg.com"], // ✅ allow this domain
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**", // ✅ allow all external images (dev purpose)
+      },
+    ],
   },
 };
 
