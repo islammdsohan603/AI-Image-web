@@ -7,13 +7,16 @@ import NavLink from './NavLink';
 import MenubarPage from './Menubar';
 import { authClient } from '@/app/lib/auth-client';
 import { Avatar } from '@heroui/react';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const userData = authClient.useSession();
   const user = userData.data?.user;
+  const route = useRouter();
 
   const handleSignOut = async () => {
     await authClient.signOut();
+    route.push(`/`);
   };
 
   return (

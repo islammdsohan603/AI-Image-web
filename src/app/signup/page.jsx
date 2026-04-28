@@ -37,7 +37,7 @@ const SignUpPages = () => {
     const { data, error } = await authClient.signUp.email({
       name: userData.name,
       email: userData.email,
-      image: userData.image,
+
       password: userData.password,
     });
 
@@ -49,6 +49,8 @@ const SignUpPages = () => {
     if (error) {
       toast.error('Signup Failed');
     }
+
+    console.log(data, error);
   };
 
   return (
@@ -107,13 +109,6 @@ const SignUpPages = () => {
                   }
                   classNames={inputStyles}
                 />
-                <FieldError className="text-red-400 text-xs mt-1" />
-              </TextField>
-              {/* image */}
-
-              <TextField isRequired name="image" type="text">
-                <Label className="text-zinc-300 mb-1 block">Image URL</Label>
-                <Input placeholder="Enter image URL" classNames={inputStyles} />
                 <FieldError className="text-red-400 text-xs mt-1" />
               </TextField>
 
