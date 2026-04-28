@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
 
         <Navbar />
 
-        <main className=" w-10/12 mx-auto ">
+        <main >
           {children}
         </main>
 

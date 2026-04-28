@@ -4,7 +4,7 @@ import logo from '@/asesst/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="relative mt-24">
+    <footer className="relative">
       <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
 
       {/* Background Layer */}

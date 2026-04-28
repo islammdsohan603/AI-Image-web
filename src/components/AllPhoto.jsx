@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { Heart, Download } from 'lucide-react';
 import Link from 'next/link';
 
-const PhotosCards = ({ photo }) => {
-  const { title, imageUrl, category, likes, downloads } = photo;
+const AllPhoto = ({ all }) => {
+  const { title, imageUrl, category, likes, downloads } = all;
 
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-xl hover:shadow-purple-500/10 transition-all duration-500 hover:-translate-y-2">
@@ -42,7 +42,7 @@ const PhotosCards = ({ photo }) => {
         </div>
 
         {/* Button */}
-        <Link href={`/photos/${photo.id}`}>
+        <Link href={`/photos/${all.id}`}>
           <button className="w-full mt-2 py-3 rounded-xl bg-linear-to-r from-purple-600 to-indigo-600 text-white hover:scale-[1.02] transition">
             View Details →
           </button>
@@ -52,4 +52,4 @@ const PhotosCards = ({ photo }) => {
   );
 };
 
-export default PhotosCards;
+export default AllPhoto;
