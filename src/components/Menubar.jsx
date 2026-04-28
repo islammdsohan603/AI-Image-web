@@ -22,7 +22,7 @@ const MenubarPage = () => {
 
         <li>
           <NavLink
-            href="/profile"
+            href={`/profile`}
             className="hover:text-purple-400 duration-300"
           >
             Profile
