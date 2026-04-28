@@ -10,10 +10,7 @@ export const auth = betterAuth({
     client,
   }),
 
-  trustedOrigins: [
-    "http://localhost:3000",
-    "https://ai-image-web-six.vercel.app",
-  ],
+
 
   emailAndPassword: {
     enabled: true,
