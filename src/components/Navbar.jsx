@@ -12,6 +12,10 @@ const Navbar = () => {
   const userData = authClient.useSession();
   const user = userData.data?.user;
 
+  const handleSignOut = async () => {
+    await authClient.signOut();
+  };
+
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
       <nav className="flex justify-between items-center py-4 px-4 max-w-7xl mx-auto">
@@ -36,7 +40,7 @@ const Navbar = () => {
           <MenubarPage />
         </div>
         {/* Buttons */}
-        {!user && (
+        {!user ? (
           <div className="flex gap-3">
             <Link
               href={`/signup`}
@@ -52,18 +56,23 @@ const Navbar = () => {
               Sign In
             </Link>
           </div>
-        )}
-        :
-        {user && (
-          <div>
+        ) : (
+          <div className="flex items-center gap-4">
             <Avatar>
               <Avatar.Image
-                alt="John Doe"
+                alt={user?.name}
                 src={user?.image}
                 referrerPolicy="no-referrer"
               />
               <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
             </Avatar>
+
+            <button
+              onClick={handleSignOut}
+              className="bg-red-500 px-4 py-1 rounded-xl text-white hover:bg-red-600 transition"
+            >
+              Logout
+            </button>
           </div>
         )}
       </nav>

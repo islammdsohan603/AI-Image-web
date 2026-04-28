@@ -22,15 +22,6 @@ const MenubarPage = () => {
 
         <li>
           <NavLink
-            href="/pricing"
-            className="hover:text-purple-400 duration-300"
-          >
-            Pricing
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink
             href="/profile"
             className="hover:text-purple-400 duration-300"
           >
