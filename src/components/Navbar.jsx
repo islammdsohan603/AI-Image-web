@@ -1,7 +1,7 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/asesst/logo.png';
+import NavLink from './NavLink';
 
 const Navbar = () => {
   return (
@@ -27,50 +27,50 @@ const Navbar = () => {
         {/* Menu */}
         <ul className="hidden md:flex items-center gap-8 text-sm text-zinc-300">
           <li>
-            <Link href="/" className="hover:text-purple-400 duration-300">
+            <NavLink href="/" className="hover:text-purple-400 duration-300">
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
-              href={`/allphoto/`}
+            <NavLink
+              href={`/allphoto`}
               className="hover:text-purple-400 duration-300"
             >
               All Photos
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               href="/pricing"
               className="hover:text-purple-400 duration-300"
             >
               Pricing
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               href="/profile"
               className="hover:text-purple-400 duration-300"
             >
               Profile
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
         {/* Buttons */}
         <div className="flex gap-3">
           <Link
-            href="/signup"
+            href={`/signup`}
             className="px-5 py-2 rounded-xl border border-white/10 bg-white/5 text-white hover:bg-white/10 transition duration-300"
           >
             Sign Up
           </Link>
 
           <Link
-            href="/signin"
+            href={`/signin`}
             className="px-5 py-2 rounded-xl bg-linear-to-r from-purple-600 to-indigo-600 text-white shadow-lg hover:scale-105 transition duration-300"
           >
             Sign In
