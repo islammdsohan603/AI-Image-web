@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PixGen – AI Image Generation Platform
 
-## Getting Started
+PixGen is a modern AI Image Platform built with Next.js, Better Auth, MongoDB,
+and Tailwind CSS. Users can browse premium AI-generated images, view detailed
+image information, create accounts, sign in securely, manage profiles, and
+explore a clean, modern UI experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📸 Project Preview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Home Page
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+![alt text](<Screenshot 2026-04-28 231733.png>)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Details
 
-## Learn More
+![alt text](<Screenshot 2026-04-28 231749.png>)
 
-To learn more about Next.js, take a look at the following resources:
+# SignUp
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![alt text](<Screenshot 2026-04-28 231818.png>)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![alt text](<Screenshot 2026-04-28 231838.png>)
 
-## Deploy on Vercel
+# Footer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![alt text](<Screenshot 2026-04-28 231818-1.png>)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Live Demo
+
+link here: https://ai-image-web-six.vercel.app/
+
+## 📌 Features
+
+- 🔐 Secure Authentication using Better Auth
+- 👤 User Signup & Sign In System
+- 🖼️ AI Image Gallery
+- 📄 Image Details Page
+- 🧑 User Profile Page
+- 🔒 Protected Routes using Proxy/Middleware
+- 📱 Fully Responsive Design
+- ⚡ Fast Performance with Next.js App Router
+- 🎨 Professional Tailwind CSS Design
+- ☁️ MongoDB Database Integration
+- 🔗 Google & GitHub Social Login
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js 16
+- React.js
+- Tailwind CSS
+- HeroUI
+- Lucide React Icons
+
+### Backend & Database
+
+- Better Auth
+- MongoDB Atlas
+- Next.js API Routes
+
+## 🔒 Protected Routes
+
+PixGen uses Next.js Proxy/Middleware for authentication protection.
+
+Protected routes:
+
+- `/allphoto`
+- `/profile`
+- `/photos/[id]`
+
+If a user is not authenticated, they are redirected to the signup page.
+
+---
+
+## 🎯 Future Improvements
+
+- AI Prompt Generator
+- Download History
+- Favorite Images Collection
+- Premium Subscription Plans
+- Dashboard Analytics
+- User Upload Feature
+
+---
+
+## 👨‍💻 Developer
+
+**Sohan Islam**
+
+- Frontend Developer
+- React.js & Next.js Developer
+- Passionate about Modern UI/UX Design
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a star on GitHub.
